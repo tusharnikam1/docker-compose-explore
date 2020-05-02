@@ -1,5 +1,8 @@
 name: descriptive-workflow-name
-on: push
+on:
+  push:
+    branches:
+      - master
 jobs:
   build:
     name: Sample workflow
@@ -10,3 +13,5 @@ jobs:
       # This step references the directory that contains the action.
       - name: Print Text
         run: echo dtils $GITHUB_REF 111 ${GITHUB_BASE_REF} 22 $GITHUB_HEAD_REF 33 $BRANCH_NAME
+      - Update version
+        run: npm run version prerelease --preid=alpha
