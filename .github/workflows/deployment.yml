@@ -18,3 +18,4 @@ jobs:
           git config user.email "tushar.nikam@globant.com"
           git config user.name "tusharnikam1"
           npm version prerelease --preid=alpha
+          git push origin HEAD
