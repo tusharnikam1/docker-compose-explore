@@ -4,10 +4,10 @@ const MongoClient = require("mongodb").MongoClient;
 const client = redis.createClient({ port: 6379, host: "cache" });
 
 client.on("connect", () => {
-  console.log("Redis connected");
+  console.log("Redis connected ");
 });
 
-client.on("error", error => {
+client.on("error", (error) => {
   console.log(`Error connecting redis : ${error}`);
 });
 
