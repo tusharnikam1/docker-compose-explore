@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       # This step references the directory that contains the action.
       - name: Print Text
-        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
+        run: echo 'dtils $GITHUB_REF 111 $GITHUB_BASE_REF 22 $GITHUB_HEAD_REF ${{ steps.hello.outputs.time }}.'
