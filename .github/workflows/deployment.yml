@@ -14,4 +14,4 @@ jobs:
       - name: Print Text
         run: echo dtils $GITHUB_REF 111 ${GITHUB_BASE_REF} 22 $GITHUB_HEAD_REF 33 $BRANCH_NAME
       - name: Update version
-        run: npm run version prerelease --preid=alpha
+        run: npm version prerelease --preid=alpha
