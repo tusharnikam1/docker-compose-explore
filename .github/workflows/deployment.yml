@@ -1,0 +1,12 @@
+name: descriptive-workflow-name
+on: push
+jobs:
+  build:
+    name: Sample workflow
+    runs-on: ubuntu-latest
+    steps:
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v2
+      # This step references the directory that contains the action.
+      - name: Print Text
+        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
